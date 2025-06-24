@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    group = 'com.multi.module'
+    version = '1.0.0'
+
+    repositories {
+        mavenCentral()
+    }
+}
