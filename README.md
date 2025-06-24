@@ -1,6 +1,6 @@
 
 ✅ Architecture Overview (What We Will Build)
-
+````
                      +---------------------+
                      |     NGINX (LB)      |
                      +----------+----------+
@@ -20,12 +20,12 @@
                        +------------------+
                        |  MySQL (Central) |
                        +------------------+
-
+````
 Other:
 - Redis used optionally for caching in each service
 - RabbitMQ is used only in payment-service
 
-
+````
 multi-model-project/
 ├── docker-compose.yml
 ├── nginx/
@@ -63,7 +63,8 @@ multi-model-project/
 │           ├── RabbitMQConfig.java
 │           └── MySQLConfig.java
 ├── README.md
-
+````
+````
                          +-------------------+
                          |     NGINX         |  <-- Load Balancer
                          +--------+----------+
@@ -77,3 +78,4 @@ multi-model-project/
         +------+      +--------------------+    +------------+
                |                           |
     Kafka, Redis, MySQL, RabbitMQ (centralized from Docker Hub)
+````
